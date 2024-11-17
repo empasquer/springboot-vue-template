@@ -25,6 +25,9 @@ Everything you need to kickstart your Spring Boot + Vue.js project for [the DAT 
 2. Ensure no other applications are running on the ports used (8080, 5173, 3307)
 3. Start your application:
    ```bash
+   docker-compose build --no-cache
+   ```
+      ```bash
    docker compose up -d
    ```
 4. To stop the containers:
@@ -42,6 +45,8 @@ Everything you need to kickstart your Spring Boot + Vue.js project for [the DAT 
       *(If you encounter CORS issues, use [http://127.0.0.1:5173](http://127.0.0.1:5173) instead.)*
     - **Backend**: [http://localhost:8080](http://localhost:8080)
     - **H2 Database**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+
+*⚠️ It may take the db some time to get initialized - breathe for 30 seconds and it should be alright then.*
 
 🎉 Your app is now running. Great job!
 
