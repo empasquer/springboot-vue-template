@@ -13,7 +13,7 @@ Everything you need to kickstart your Spring Boot + Vue.js project for [the DAT 
 
 1. Clone this repository:
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/empasquer/springboot-vue-template.git
    ```
 2. You're ready to go!
 
@@ -22,21 +22,22 @@ Everything you need to kickstart your Spring Boot + Vue.js project for [the DAT 
 ## **Usage**
 
 1. Ensure Docker/OrbStack is installed and running.
-2. Start your application:
+2. Ensure no other applications are running on the ports used (8080, 5173, 3307)
+3. Start your application:
    ```bash
    docker compose up -d
    ```
-3. To stop the containers:
+4. To stop the containers:
    ```bash
    docker compose down
    ```
-4. Verify running containers:
+5. Verify running containers:
    ```bash
    docker ps
    ```
    *For more Docker Compose commands, refer to the [official documentation](https://docs.docker.com/reference/cli/docker/compose/).*
 
-5. Access your application:
+6. Access your application:
     - **Frontend**: [http://localhost:5173](http://localhost:5173)  
       *(If you encounter CORS issues, use [http://127.0.0.1:5173](http://127.0.0.1:5173) instead.)*
     - **Backend**: [http://localhost:8080](http://localhost:8080)
@@ -50,7 +51,8 @@ Everything you need to kickstart your Spring Boot + Vue.js project for [the DAT 
 Here are a few steps to make this template your own:
 
 - [ ] Rename the folder to match your project.
-- [ ] Refactor the project name, application name, and metadata as needed.
+- [ ] Refactor the project name, application name, and metadata as needed. 
+- [ ] GO TO `compose.yml` and change all environmental variables to your own (⚠️ messes with the test data)
 - [ ] Review and modify the provided data examples in the `data/` directory.
 - [ ] Check the `src/configs` folder:
     - `InitDataExample.java`: Examples for populating your database with JPA.
