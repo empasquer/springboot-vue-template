@@ -41,6 +41,7 @@ Everything you need to kickstart your Spring Boot + Vue.js project for [the DAT 
     - **Frontend**: [http://localhost:5173](http://localhost:5173)  
       *(If you encounter CORS issues, use [http://127.0.0.1:5173](http://127.0.0.1:5173) instead.)*
     - **Backend**: [http://localhost:8080](http://localhost:8080)
+    - **H2 Database**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
 
 🎉 Your app is now running. Great job!
 
@@ -53,6 +54,7 @@ Here are a few steps to make this template your own:
 - [ ] Rename the folder to match your project.
 - [ ] Refactor the project name, application name, and metadata as needed. 
 - [ ] GO TO `compose.yml` and change all environmental variables to your own (⚠️ messes with the test data)
+- [ ] In that same file, make sure to comment and uncomment which profile you want to use (details in file)
 - [ ] Review and modify the provided data examples in the `data/` directory.
 - [ ] Check the `src/configs` folder:
     - `InitDataExample.java`: Examples for populating your database with JPA.
